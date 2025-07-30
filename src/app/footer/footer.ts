@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class Footer {
-@Input() year: number = new Date().getFullYear();
+year: number = new Date().getFullYear();
 }
