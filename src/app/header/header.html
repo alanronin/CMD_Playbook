@@ -1,1 +1,21 @@
-<p>header works!</p>
+<header class="header">
+  <div class="header-container">
+    <div class="logo">CMD SISTEMAS</div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  </div>
+
+  <div class="mobile-nav" [class.open]="isMenuOpen">
+    <a href="#" (click)="closeMenu()">Inicio</a>
+    <a href="#" (click)="closeMenu()">Servicios</a>
+    <a href="#" (click)="closeMenu()">Contacto</a>
+  </div>
+</header>
